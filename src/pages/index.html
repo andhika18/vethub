@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="../assets/css/tailwind.css" rel="stylesheet" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/images/favicon.ico">
 </head>
 
 <body>
@@ -25,9 +27,9 @@
                 </button>
                 <div class="menu hidden lg:block absolute lg:relative top-full left-0 right-0 p-5 lg:p-0 w-full bg-white">
                     <ul class="lg:flex justify-between items-center space-y-2 lg:space-y-0">
-                        <li><a href="#" class="text-[20px] font-semibold text-primary">About us</a></li>
-                        <li><a href="#" class="text-[20px] font-semibold text-primary">Feature</a></li>
-                        <li><a href="#" class="text-[20px] font-semibold text-primary">Testimonial</a></li>
+                        <li><a href="#about" class="text-[20px] font-semibold text-primary">About us</a></li>
+                        <li><a href="#feature" class="text-[20px] font-semibold text-primary">Feature</a></li>
+                        <li><a href="#testimonial" class="text-[20px] font-semibold text-primary">Testimonial</a></li>
                         <li>
                             <a href="#">
                                 <div class="rounded-[15px] p-[3px] bg-gradient-to-t from-primary to-[#8FAFFF]">
@@ -83,7 +85,7 @@
     </section>
 
     <!-- powered by -->
-    <section class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px] fade-to-top">
+    <section id="about" class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px] fade-to-top">
         <div class="flex flex-col items-center mb-[10px]">
             <h4 class="md:text-[20px] text-[16px] font-semibold text-[#C4C7CF]">POWERED BY</h4>
             <img src="../assets/images/logo-vettalk.png" alt="Powered By" class="md:w-[382px] md:h-[144px]" />
@@ -106,7 +108,7 @@
     </section>
 
     <!-- all feature -->
-    <section class="bg-gradient-to-t from-[#D6E7FA] to-[#d6e7fa00] pt-[79px] pb-[90px] mb-[95px] fade-to-top">
+    <section id="feature" class="bg-gradient-to-t from-[#D6E7FA] to-[#d6e7fa00] pt-[79px] pb-[90px] mb-[95px] fade-to-top">
         <div class="container mx-auto md:px-20 px-5">
             <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold text-center mb-[33px]">Watch All Feature</h1>
             <div class="border-[2px] md:rounded-[30px] rounded-2xl border-primary mb-[44px] overflow-clip">
@@ -119,7 +121,7 @@
     </section>
 
     <!-- review -->
-    <section class="container mx-auto md:px-16 px-5 mb-[133px] fade-to-bottom">
+    <section id="testimonial" class="container mx-auto md:px-16 px-5 mb-[133px] fade-to-bottom">
         <div class="md:columns-2 md:gap-11 space-bottom-8">
             <div class="w-full inline-block fade-to-top">
                 <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold md:-ml-10">What They Say About Us?</h1>

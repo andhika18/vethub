@@ -59,3 +59,19 @@ $(window).on("scroll", function () {
 
 // initial trigger scroll
 $(window).trigger("scroll");
+
+// Smooth scroll to section with offset for sticky navbar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const navbarHeight = document.querySelector('header').offsetHeight;
+      const target = document.querySelector(this.getAttribute('href'));
+      const targetOffset = target.offsetTop - (navbarHeight + 15);
+  
+      window.scrollTo({
+        top: targetOffset,
+        behavior: 'smooth'
+      });
+    });
+  });
